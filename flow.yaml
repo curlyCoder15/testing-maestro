@@ -18,7 +18,7 @@ appId: com.pizzaapp
     text: let's go!
 - tapOn: "Community"
 - tapOn: 
-    point: 233,758
+    point: 233,758  # points picked from inspector
 - tapOn:
     rightOf:
       id: "Community, tab, 2 of 4"
