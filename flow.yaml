@@ -16,11 +16,12 @@ appId: com.pizzaapp
 # - tapOn: ok
 - tapOn:
     text: let's go!
-- tapOn: "Community"
+# - tapOn: "Community"
 - tapOn: 
     point: 233,758  # points picked from inspector
-- tapOn:
-    rightOf:
-      id: "Community, tab, 2 of 4"
+# - tapOn:
+#     rightOf:
+#       id: "Community, tab, 2 of 4"
 # - tapOn:
 #     below: "psst  — This probably isn't what your app looks like. (Unless your designer handed you these screens, and in that case, ship it!)"
+- runFlow: assertTest.yaml 
