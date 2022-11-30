@@ -1,6 +1,26 @@
 appId: com.pizzaapp
 ---
+- clearState
 - launchApp
 - tapOn: "Tap to sign in!"
-
-# we need to make sure an Android device/emulator or iOS simulator is running
+- tapOn:
+    point: 300,47  #these points come from running maestro hierarchy, the x should be little more than as deffined with hierarchy
+- tapOn: "Tap to sign in!"
+# - longPressOn: 
+#     text: let's go!
+#     index: 1
+# - tapOn: ok
+# - tapOn:
+#     text: let's go!
+#     index: 1
+# - tapOn: ok
+- tapOn:
+    text: let's go!
+- tapOn: "Community"
+- tapOn: 
+    point: 233,758
+- tapOn:
+    rightOf:
+      id: "Community, tab, 2 of 4"
+# - tapOn:
+#     below: "psst  — This probably isn't what your app looks like. (Unless your designer handed you these screens, and in that case, ship it!)"
