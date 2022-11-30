@@ -1,0 +1,6 @@
+appId: com.pizzaapp
+---
+- launchApp
+- tapOn: "Tap to sign in!"
+
+# we need to make sure an Android device/emulator or iOS simulator is running
