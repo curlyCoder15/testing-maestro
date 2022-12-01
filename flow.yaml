@@ -2,6 +2,7 @@ appId: com.pizzaapp
 ---
 - clearState
 - launchApp
+- runFlow: login.yaml
 - tapOn: "Tap to sign in!"
 - tapOn:
     point: 300,47  #these points come from running maestro hierarchy, the x should be little more than as deffined with hierarchy
@@ -24,4 +25,5 @@ appId: com.pizzaapp
 #       id: "Community, tab, 2 of 4"
 # - tapOn:
 #     below: "psst  — This probably isn't what your app looks like. (Unless your designer handed you these screens, and in that case, ship it!)"
-- runFlow: assertTest.yaml 
+- runFlow: assertTest.yaml
+- runFlow: scroll.yaml 

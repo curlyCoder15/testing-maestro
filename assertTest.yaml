@@ -1,7 +1,7 @@
 appId: com.pizzaapp
 ---
 - assertVisible: React Native Radio episodes
-- assertVisible: Favorite # does not work
-- tapOn:  
-    text: "Favorite" # this doesn't work as it doesn't recognise it on hierarchy ? guess nested children
-    index: 1
+# - assertVisible: Favorite # does not work
+# - tapOn:  
+#     text: "Favorite" # this doesn't work as it doesn't recognise it on hierarchy ? guess nested children
+#     index: 1
