@@ -1,0 +1,13 @@
+appId: com.pizzaapp
+---
+- clearState
+- launchApp
+# - clearState: app.id 
+#The command is removing the contents of the application's data folder. An equivalent idb command would be:
+- extendedWaitUntil:
+    visible: 'Sign in'    # Same input as in assertVisible or tapOn
+    timeout: 10000 
+- takeScreenshot: MainScreen
+- openLink: https://youtube.com
+- clearKeychain 
+- stopApp
