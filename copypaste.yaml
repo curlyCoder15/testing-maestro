@@ -1,0 +1,11 @@
+appId: com.pizzaapp
+---
+- clearState
+- launchApp
+- tapOn: "Email"
+- eraseText: 100 #default is 50  
+- inputRandomEmail
+- copyTextFrom:
+    text: 'sign in'   # (optional) Finds element with text that matches regexp
+- tapOn: "Password"
+- pasteText
