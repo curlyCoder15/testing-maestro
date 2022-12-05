@@ -1,0 +1,1 @@
+output.result = 'Jamon@infinite.red'

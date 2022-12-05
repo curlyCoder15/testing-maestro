@@ -1,0 +1,12 @@
+appId: com.pizzaapp
+---
+- clearState
+- launchApp
+- repeat:
+    times: 3
+    commands:
+      - tapOn: "Tap to sign in!"
+      - waitForAnimationToEnd
+      - tapOn: "Log out"
+- tapOn: "Tap to sign in!"
+- tapOn: "let's go!"
