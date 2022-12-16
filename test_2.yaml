@@ -1,21 +1,30 @@
+#test for
+# -input information
+# -hardware keys
+# -nested flow
+
 appId: com.pizzaapp
 ---
+- clearState
+- launchApp
 - tapOn: "Email"
-- eraseText: 100 #default is 50  
-- inputText: "simran@infinite.red"  # doesn't support unicode characters À
+- eraseText: 100 #default is 50
+- inputRandomEmail # doesn't support unicode characters À
 - pressKey: backspace
 - tapOn: "Password"
 - eraseText: 100 #default is 50
 - inputText: "password1234"
+- tapOn: "Tap to sign in!"
 # - hideKeyboard - clicks return on keybord and unable to test
-- pressKey: 'home'
-- pressKey: 'lock'
-- pressKey: 'volume up'
-- pressKey: 'volume down'
+- pressKey: "home"
+- pressKey: "lock"
+- pressKey: "volume up"
+- pressKey: "volume down"
+- launchApp
+- tapOn: "Let's go!"
+- runFlow: assert.yaml
 # back - back button (Android only)
-
-
 # - inputRandomEmail       # Enters a random Email address
 # - inputRandomPersonName  # Enters a random person name
 # - inputRandomNumber      # Enters a random integer number
-# - inputRandomText 
+# - inputRandomText

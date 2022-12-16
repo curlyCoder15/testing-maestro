@@ -1,0 +1,17 @@
+#test for
+# -conditionals
+
+appId: com.pizzaapp
+# env:
+#   type: "3"
+---
+- clearState
+- launchApp
+- runFlow:
+    when:
+      true: ${type === "1"}
+    file: test_1.yaml
+# - runFlow:
+#     when:
+#       visible: Some Text
+#     file: {reference to another yaml file}

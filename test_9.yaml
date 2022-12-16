@@ -1,0 +1,11 @@
+#test for
+# -API
+
+appId: com.pizzaapp
+---
+- clearState
+- launchApp
+- runScript: ./scripts/api.js
+- tapOn: email
+- eraseText: 100 #default is 50
+- inputText: ${output.result}

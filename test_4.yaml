@@ -1,0 +1,15 @@
+#test for
+# -copy text
+# -paste text
+
+appId: com.pizzaapp
+---
+- clearState
+- launchApp
+- tapOn: "Email"
+- eraseText: 100 #default is 50
+- inputRandomEmail
+- copyTextFrom:
+    text: "sign in"
+- tapOn: "Password"
+- pasteText

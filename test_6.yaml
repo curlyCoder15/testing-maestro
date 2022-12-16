@@ -1,0 +1,17 @@
+#test for
+# -screenshot
+# -external link
+# -wait
+
+appId: com.pizzaapp
+---
+- clearState
+- launchApp
+# - clearState: app.id
+#The command removes the contents of the application's data folder
+- extendedWaitUntil:
+    visible: "Sign in" # Same input as in assertVisible or tapOn
+    timeout: 10000
+- takeScreenshot: ./scripts/screenshot
+- openLink: https://youtube.com
+- stopApp

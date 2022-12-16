@@ -1,0 +1,3 @@
+appId: com.pizzaapp
+---
+- assertVisible: 'List of icons registered inside the component.'

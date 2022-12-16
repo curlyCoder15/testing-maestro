@@ -1,0 +1,27 @@
+#test for
+# -expo
+#get the appId from website https://offcornerdev.com/bundleid.html
+
+appId: host.exp.Exponent
+---
+- launchApp
+# - clearState   # can't use this here
+- tapOn: "PizzaApp"
+- tapOn: "Tap to sign in!"
+- tapOn:
+    text: let's go!
+- tapOn:
+    point: 233,758 # points picked from inspector
+- swipe:
+    start: 100, 600
+    end: 100, 100
+- swipe:
+    start: 100, 0
+    end: 100, 600
+- tapOn:
+    text: "Published Nov 11, 2022 Duration: 0 hours 30 minutes 30 seconds RNR 252 - Ionic's React Native Portals with Josh Thomas Episode not favorited"
+- tapOn:
+    text: Pause
+- stopApp: com.apple.mobilesafari
+- launchApp
+- tapOn: "PizzaApp"

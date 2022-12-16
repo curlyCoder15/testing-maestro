@@ -1,0 +1,16 @@
+#test for
+# -running an external script
+
+appId: com.pizzaapp
+---
+- clearState
+- launchApp
+- runScript: ./scripts/getEmail.js
+- tapOn: email
+- eraseText: 100 #default is 50
+- inputText: ${output.test}
+# - copyTextFrom: sign in
+# - tapOn: email
+# - eraseText: 100              #default is 50
+# - inputText: ${('what is your screen? ' + maestro.copiedText).toUpperCase()}
+

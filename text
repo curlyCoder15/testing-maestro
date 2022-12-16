@@ -1,0 +1,6 @@
+maestro test -c flow.yaml - continous
+maestro hierarchy
+maestro test -e USERNAME=user@example.com -e PASSWORD=123 file.yaml
+yarn expo:start
+
+https://offcornerdev.com/bundleid.html
