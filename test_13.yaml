@@ -1,0 +1,12 @@
+appId: com.apple.MobileAddressBook
+---
+- launchApp
+- tapOn: "Search"
+# - tapOn: "Email"
+# - eraseText: 100 #default is 50
+- inputText: "HellãoWorld@gmail.com"
+# - inputRandomEmail # doesn't support unicode characters À
+# - pressKey: backspace
+# - tapOn: "Password"
+# - eraseText: 100 #default is 50
+# - inputText: "password1234"

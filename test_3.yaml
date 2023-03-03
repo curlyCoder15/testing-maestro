@@ -2,9 +2,9 @@
 # -environment variables
 
 appId: com.pizzaapp
-# env:
-#     USERNAME: user@example.com
-#     PASSWORD: 123
+env:
+  USERNAME: user@example.com
+  PASSWORD: 123
 ---
 - clearState
 - launchApp

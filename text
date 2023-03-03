@@ -4,3 +4,4 @@ maestro test -e USERNAME=user@example.com -e PASSWORD=123 file.yaml
 yarn expo:start
 
 https://offcornerdev.com/bundleid.html
+https://github.com/curlyCoder15/testing-maestro/tree/main
